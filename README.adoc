@@ -1,0 +1,12 @@
+= docker-luacheck
+
+docker hub: https://hub.docker.com/r/birdy/docker-luacheck/
+
+== Usage
+Just mount your directory to /tmp and run luacheck commands on it:
+
+ docker run -v $PWD:/tmp birdy/docker-luacheck 
+ 
+To check a file called sample.lua:
+
+ docker run -v $PWD:/tmp birdy/docker-luacheck sample.lua
